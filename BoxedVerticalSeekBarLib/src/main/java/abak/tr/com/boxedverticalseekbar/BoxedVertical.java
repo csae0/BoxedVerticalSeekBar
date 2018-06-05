@@ -181,7 +181,7 @@ public class BoxedVertical extends View{
         scrWidth = getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec);
         scrHeight = getDefaultSize(getSuggestedMinimumHeight(), heightMeasureSpec);
         mProgressPaint.setStrokeWidth(scrWidth);
-
+        setValue(mPoints);
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
