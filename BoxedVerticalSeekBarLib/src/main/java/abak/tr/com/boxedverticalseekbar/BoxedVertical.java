@@ -235,7 +235,7 @@ public class BoxedVertical extends View{
         canvas.drawText(text, x, canvas.getHeight()-mtextBottomPadding, paint);
     }
 
-    private void drawIcon(Bitmap bitmap, Canvas canvas){
+    private void drawIcon(Bitmap bitmap, Canvas canvas) {
         bitmap = getResizedBitmap(bitmap,canvas.getWidth()/2, canvas.getWidth()/2);
         canvas.drawBitmap(bitmap, null, new RectF((canvas.getWidth()/2)-(bitmap.getWidth()/2), canvas.getHeight()-bitmap.getHeight(), (canvas.getWidth()/3)+bitmap.getWidth(), canvas.getHeight()), null);
     }
@@ -443,5 +443,33 @@ public class BoxedVertical extends View{
 
     public void setOnBoxedPointsChangeListener(OnValuesChangeListener onValuesChangeListener) {
         mOnValuesChangeListener = onValuesChangeListener;
+    }
+
+    public void setMin(int mMin) {
+        this.mMin = mMin;
+    }
+
+    public void setTextSize(float mTextSize) {
+        this.mTextSize = mTextSize;
+    }
+
+    public void setTextBottomPadding(int mtextBottomPadding) {
+        this.mtextBottomPadding = mtextBottomPadding;
+    }
+
+    public void setTextEnabled(boolean mtextEnabled) {
+        this.mtextEnabled = mtextEnabled;
+    }
+
+    public void setTouchDisabled(boolean mTouchDisabled) {
+        this.mTouchDisabled = mTouchDisabled;
+    }
+
+    public void setProgressPaint(Paint mProgressPaint) {
+        this.mProgressPaint = mProgressPaint;
+    }
+
+    public void setTextPaint(Paint mTextPaint) {
+        this.mTextPaint = mTextPaint;
     }
 }
