@@ -465,11 +465,14 @@ public class BoxedVertical extends View{
         this.mTouchDisabled = mTouchDisabled;
     }
 
-    public void setProgressPaint(Paint mProgressPaint) {
-        this.mProgressPaint = mProgressPaint;
+    public void setProgressPaint(int color) {
+        this.mProgressPaint.setColor(color);
     }
 
-    public void setTextPaint(Paint mTextPaint) {
-        this.mTextPaint = mTextPaint;
+    public void setTextPaint(int color) {
+        this.mTextPaint.setColor(color);
+    }
+    public void setBackgroundColor(int color) {
+        this.backgroundColor = color;
     }
 }
